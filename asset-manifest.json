@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/chat-app/static/css/main.6ef682f2.css",
+    "main.js": "/chat-app/static/js/main.cb7bb70b.js",
+    "static/media/attach-interface-symbol-of-a-clip.png": "/chat-app/static/media/attach-interface-symbol-of-a-clip.4c902b345f019b7c697b.png",
+    "index.html": "/chat-app/index.html",
+    "main.6ef682f2.css.map": "/chat-app/static/css/main.6ef682f2.css.map",
+    "main.cb7bb70b.js.map": "/chat-app/static/js/main.cb7bb70b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ef682f2.css",
+    "static/js/main.cb7bb70b.js"
+  ]
+}
