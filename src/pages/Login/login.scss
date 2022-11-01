@@ -1,0 +1,211 @@
+.formContainer {
+    background-color: #23242a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginformWrapper {
+        position: relative;
+        background-color: #1c1c1c;
+        padding: 5px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 340px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -15%;
+            width: 300px;
+            height: 310px;
+            transform-origin: bottom right;
+            background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+            animation: animate 6s linear infinite;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -15%;
+            width: 300px;
+            height: 310px;
+            transform-origin: bottom right;
+            background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+            animation: animate 6s linear infinite;
+            animation-delay: -3s;
+        }
+    }
+}
+
+.form {
+    z-index: 2;
+    inset: 2px;
+    background-color: #28292d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px 60px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 35px;
+    letter-spacing: 0.1rem;
+    color: #45f3ff;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 10px;
+}
+
+.email {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.password {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/*====================================================================================================================*/
+
+.email>input {
+    position: relative;
+    padding: 10px 10px 9px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    z-index: 2;
+}
+
+.email>i {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.email>input:focus~i {
+    height: 40px;
+}
+
+.email>input:focus~span {
+    color: #45f3ff;
+    transform: translateY(-34px);
+}
+
+.email>span {
+    position: absolute;
+    color: #8f8f8f;
+    pointer-events: none;
+    font-size: 0.82rem;
+    letter-spacing: 0.02rem;
+    padding: 10px 10px 10px;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*====================================================================================================================*/
+
+.password>input {
+    position: relative;
+    padding: 10px 10px 9px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    z-index: 2;
+}
+
+.password>i {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #45f3ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.password>input:focus~i {
+    height: 40px;
+}
+
+.password>input:focus~span {
+    color: #45f3ff;
+    transform: translateY(-34px);
+}
+
+.password>span {
+    position: absolute;
+    color: #8f8f8f;
+    pointer-events: none;
+    font-size: 0.82rem;
+    letter-spacing: 0.02rem;
+    padding: 10px 10px 10px;
+    transition: 0.5s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.form > form > button {
+    background-color: #45f3ff;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10px;
+}
+
+.link {
+    background-color: #45f3ff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
